@@ -1218,12 +1218,27 @@
 
 					<header class="text-center mb-60">
 						<h2>Contact Us</h2>
-						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
 						<hr />
 					</header>
 
 
 					<div class="row">
+
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
+
+							<h2>Visit Us</h2>
+							<h3>Rocket Elevators</h3>
+
+							<hr />
+
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@rocketelevators.com">info@rocketelevators.com</a></span>
+							</p>
+
+						</div>
+						<!-- /INFO -->
 
 						<!-- FORM -->
 						<div class="col-md-8 col-sm-8">
@@ -1281,23 +1296,33 @@
 									<input type="hidden" name="action" value="contact_send" />
 
 									<div class="row">
-											<div class="col-md-4">
-												<label for="contact:name">Full Name *</label>
+											<div class="col-md-6">
+												<label for="contact:name">Contact Full Name *</label>
 												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
 											</div>
-											<div class="col-md-4">
+											<div class="col-md-6">
+													<label for="contact:business">Business Name *</label>
+													<input required type="text" value="" class="form-control" name="contact[business][required]" id="contact:business">
+												</div>
+									</div>
+									<div class="row">
+											<div class="col-md-6">
 												<label for="contact:email">E-mail Address *</label>
 												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
 											</div>
-											<div class="col-md-4">
+											<div class="col-md-6">
 												<label for="contact:phone">Phone</label>
 												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
 											</div>
 									</div>
 									<div class="row">
-											<div class="col-md-8">
-												<label for="contact:subject">Subject *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+											<div class="col-md-4">
+												<label for="contact:project">Project Name*</label>
+												<input required type="text" value="" class="form-control" name="contact[project][required]" id="contact:project">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:description">Project Description *</label>
+												<input required type="text" value="" class="form-control" name="contact[description][required]" id="contact:description">
 											</div>
 											<div class="col-md-4">
 												<label for="contact_department">Department</label>
@@ -1338,47 +1363,11 @@
 						</div>
 						<!-- /FORM -->
 
-
-						<!-- INFO -->
-						<div class="col-md-4 col-sm-4">
-
-							<h2>Visit Us</h2>
-
-							<!-- 
-							Available heights
-								h-100
-								h-150
-								h-200
-								h-250
-								h-300
-								h-350
-								h-400
-								h-450
-								h-500
-								h-550
-								h-600
-							-->
-							<div id="map2" class="h-400 grayscale"></div>
-
-							<hr />
-
-							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Street Name, City Name, Country</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></span>
-							</p>
-
-						</div>
-						<!-- /INFO -->
-
 					</div>
 
 				</div>
 			</section>
 			<!-- /CONTACT -->
-
-
-
 
 			<!-- FOOTER -->
 			<footer id="footer">
