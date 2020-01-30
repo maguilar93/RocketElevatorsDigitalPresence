@@ -191,162 +191,128 @@
 									<fieldset>
 										<!-- required [php action request] -->
 										<input type="hidden" name="action" value="contact_send" />
-
-										<div class="row">
-												<div class="col-md-12 col-sm-12">
-														<label>Type of Building*</label>
-														<select name="contact[Type]" class="form-control pointer required">
-															<option value="">--- Select ---</option>
-															<option value="residential">Residential</option>
-															<option value="developer">Commercial</option>
-															<option value="corporate">Corporate</option>
-															<option value="hybrid">Hybrid</option>
-														</select>
-													</div>
+										
+										<div>
+											<div class="row">
+													<div class="col-md-12 col-sm-12">
+															<label>Type of Building*</label>
+															<select name="contact[Type]" class="form-control pointer required" id="building" >
+																<option value= "0">--- Select ---</option>
+																<option value= "1">Residential</option>
+																<option value= "2">Commercial</option>
+																<option value= "3">Corporate</option>
+																<option value= "4">Hybrid</option>
+															</select>
+														</div>
+											</div>
 										</div>
 
-										<div class="residentialForm"> <!-- START OF RESIDENTIAL FORM -->
+										<br />
+
+										<div id="residentialForm" style="display:none"> <!-- START OF RESIDENTIAL FORM -->
 											<div class="row">
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Apartments*</label>
-														<input type="number" name="contact[appartments]" value="" class="form-control required">
+														<input type="number" name="contact[appartments]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Floors*</label>
-														<input type="number" name="contact[floors]" value="" class="form-control required">
+														<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Basements*</label>
-														<input type="number" name="contact[basements]" value="" class="form-control required">
+														<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
 													</div>
 												</div>
 										</div> <!-- END OF RESIDENTIAL FORM -->
 
 
-										<div class="commercialForm"> <!-- START OF COMMERCIAL FORM -->
+										<div id="commercialForm" style="display:none"> <!-- START OF COMMERCIAL FORM -->
 											<div class="row">
 												<div class="col-md-6 col-sm-6">
 													<label>Number of Distinct Businesses*</label>
-													<input type="number" name="contact[businesses]" value="" class="form-control required">
+													<input type="number" name="contact[businesses]" value="" min="1" class="form-control required">
 												</div>
 												<div class="col-md-6 col-sm-6">
 													<label>Number of Floors*</label>
-													<input type="number" name="contact[floors]" value="" class="form-control required">
+													<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
 												</div>
 											</div>
 											<div class="row">
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Basements*</label>
-														<input type="number" name="contact[email]" value="" class="form-control required">
+														<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Parking Spaces*</label>
-														<input type="number" name="contact[phone]" value="" class="form-control required">
+														<input type="number" name="contact[parking]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 															<label>Number of Elevator Cages Needed*</label>
-															<input type="numberl" name="contact[email]" value="" class="form-control required">
+															<input type="numberl" name="contact[elevator]" value="" min="1" class="form-control required">
 														</div>
 												</div>
 										</div> <!-- END OF COMMERCIAL FORM -->
 
-										<div class="corporateForm"> <!-- START OF CORPORATE FORM -->
+										<div id="corporateForm" style="display:none"> <!-- START OF CORPORATE FORM -->
 											<div class="row">
 												<div class="col-md-6 col-sm-6">
 													<label>Number of Separate Tenant Companies*</label>
-													<input type="number" name="contact[email]" value="" class="form-control required">
+													<input type="number" name="contact[companies]" value="" min="1" class="form-control required">
 												</div>
 												<div class="col-md-6 col-sm-6">
 													<label>Number of Floors*</label>
-													<input type="number" name="contact[phone]" value="" class="form-control required">
+													<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
 												</div>
 											</div>
 											<div class="row">
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Basements*</label>
-														<input type="number" name="contact[email]" value="" class="form-control required">
+														<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Parking Spaces*</label>
-														<input type="number" name="contact[phone]" value="" class="form-control required">
+														<input type="number" name="contact[parking]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
-															<label>Number of Elevator Cages Needed*</label>
-															<input type="number" name="contact[email]" value="" class="form-control required">
+															<label>Number of Occupants per Floor*</label>
+															<input type="number" name="contact[occupants]" value="" min="1" class="form-control required">
 														</div>
 												</div>
-										</div> <!-- END OF CORPORATE FORM -->
+										</div> <!--END OF CORPORATE FORM-->
 
-										<div class="row">
-											<div class="col-md-6 col-sm-6">
-												<label>Email *</label>
-												<input type="number" name="contact[email]" value="" class="form-control required">
-											</div>
-											<div class="col-md-6 col-sm-6">
-												<label>Phone *</label>
-												<input type="number" name="contact[phone]" value="" class="form-control required">
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-12 col-sm-12">
-												<label>Position *</label>
-												<select name="contact[position]" class="form-control pointer required">
-													<option value="">--- Select ---</option>
-													<option value="Marketing">PR &amp; Marketing</option>
-													<option value="Developer">Web Developer</option>
-													<option value="php">PHP Programmer</option>
-													<option value="Javascript">Javascript Programmer</option>
-												</select>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-6 col-sm-6">
-												<label>Expected Salary *</label>
-												<input type="text" name="contact[expected_salary]" value="" class="form-control required">
-											</div>
-											<div class="col-md-6 col-sm-6">
-												<label>Start Date *</label>
-												<input type="text" name="contact[start_date]" value="" class="form-control datepicker required" data-format="yyyy-mm-dd" data-lang="en" data-RTL="false">
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-12 col-sm-12">
-												<label>Experience *</label>
-												<textarea name="contact[experience]" rows="4" class="form-control required"></textarea>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-12 col-sm-12">
-												<label>
-													Website
-													<small class="text-muted">- optional</small>
-												</label>
-												<input type="text" name="contact[website]" placeholder="http://" class="form-control">
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-12">
-												<label>
-													File Attachment 
-													<small class="text-muted">Curriculum Vitae - optional</small>
-												</label>
-
-												<!-- custom file upload -->
-												<div class="fancy-file-upload fancy-file-primary">
-													<i class="fa fa-upload"></i>
-													<input type="file" class="form-control" name="contact[attachment]" onchange="jQuery(this).next('input').val(this.value);" />
-													<input type="text" class="form-control" placeholder="no file selected" readonly="" />
-													<span class="button">Choose File</span>
+										<div id="hybridForm" style="display:none"> <!-- START OF HYBRID FORM -->
+											<div class="row">
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Distinct Businesses*</label>
+													<input type="number" name="contact[businesses]" value="" min="1" class="form-control required">
 												</div>
-												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
-
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Floors*</label>
+													<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
+												</div>
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Basements*</label>
+													<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
+												</div>
 											</div>
-										</div>
+											<div class="row">
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Parking Spaces*</label>
+													<input type="number" name="contact[parking]" value="" min="1" class="form-control required">
+												</div>
+												<div class="col-md-4 col-sm-4">
+													<label>Max Occupants per Floor*</label>
+													<input type="number" name="contact[occupants]" value="" min="1" class="form-control required">
+												</div>
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Hours of Activity*</label>
+													<input type="number" name="contact[activity]" value="" min="1" max="24" class="form-control required">
+												</div>
+											</div>
+										</div> <!--END OF HYBRID FORM-->		
+							</div>
+						</div>
 
 									</fieldset>
 
@@ -364,7 +330,7 @@
 
 							</div>
 
-							<div class="card-footer">
+							<!-- <div class="card-footer">
 								<a href="javascript:;" onclick="jQuery('#pre-4').slideToggle();" class="btn btn-success btn-sm">Show Code</a>
 <pre id="pre-4" class="text-left rad-0 text-danger hide mt-20 mb-0">
 <span class="text-success">&lt;!-- 
@@ -476,7 +442,7 @@
 
 &lt;/form&gt;
 </pre>
-							</div>
+							</div> -->
 						</div>
 						<!-- /Useful Elements -->
 
@@ -486,88 +452,32 @@
 			</section>
 			<!-- / -->
 
-
-
-
-
-
 			<!-- FOOTER -->
 			<footer id="footer">
 				<div class="container">
 
 					<div class="row">
-						
-						<div class="col-md-3">
-							<!-- Footer Logo -->
-							<img class="footer-logo" src="assets/images/_smarty/logo-footer.png" alt="" />
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
 
 							<!-- Small Description -->
-							<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-
-							<!-- Contact Address -->
-							<address>
-								<ul class="list-unstyled">
-									<li class="footer-sprite address">
-										PO Box 21132<br>
-										Here Weare St, Melbourne<br>
-										Vivas 2355 Australia<br>
-									</li>
-									<li class="footer-sprite phone">
-										Phone: 1-800-565-2390
-									</li>
-									<li class="footer-sprite email">
-										<a href="mailto:support@yourname.com">support@yourname.com</a>
-									</li>
-								</ul>
-							</address>
-							<!-- /Contact Address -->
-
+							<p> <!-- Copied from https://www.thyssenkruppelevator.com/about-us -->
+									Customers worldwide turn to us to design, build, install, upgrade and maintain smart and innovative mobility systems for a wide variety of applications. We support our customers around the world throughout their project lifecycle, from the design through to the end-of-life phase. 
+							</p> 
+							
+							<h2>1 (800) 123 4567</h2>
 						</div>
+						<!-- /col #1 -->
 
-						<div class="col-md-3">
-
-							<!-- Latest Blog Post -->
-							<h4 class="letter-spacing-1">LATEST NEWS</h4>
-							<ul class="footer-posts list-unstyled">
-								<li>
-									<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
-									<small>29 June 2017</small>
-								</li>
-								<li>
-									<a href="#">Nullam id dolor id nibh ultricies</a>
-									<small>29 June 2017</small>
-								</li>
-								<li>
-									<a href="#">Duis mollis, est non commodo luctus</a>
-									<small>29 June 2017</small>
-								</li>
-							</ul>
-							<!-- /Latest Blog Post -->
-
-						</div>
-
-						<div class="col-md-2">
-
-							<!-- Links -->
-							<h4 class="letter-spacing-1">EXPLORE SMARTY</h4>
-							<ul class="footer-links list-unstyled">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Our Services</a></li>
-								<li><a href="#">Our Clients</a></li>
-								<li><a href="#">Our Pricing</a></li>
-								<li><a href="#">Smarty Tour</a></li>
-								<li><a href="#">Contact Us</a></li>
-							</ul>
-							<!-- /Links -->
-
-						</div>
-
+						<!-- col #2 -->
 						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
 
 							<!-- Newsletter Form -->
-							<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
-							<p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
 
 							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
 								<div class="input-group">
@@ -580,40 +490,12 @@
 							</form>
 							<!-- /Newsletter Form -->
 
-							<!-- Social Icons -->
-							<div class="mt-20">
-								<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
-
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
-									<i class="icon-rss"></i>
-									<i class="icon-rss"></i>
-								</a>
-					
-							</div>
-							<!-- /Social Icons -->
 
 						</div>
+						<!-- /col #2 -->
 
 					</div>
+
 
 				</div>
 
@@ -624,11 +506,12 @@
 							<li>&bull;</li>
 							<li><a href="#">Privacy</a></li>
 						</ul>
-						&copy; All Rights Reserved, Company LTD
+						&copy; All Rights Reserved, Rocket Elevators Ltd.
 					</div>
 				</div>
+
 			</footer>
-			<!-- /FOOTER -->
+		<!-- /FOOTER -->
 
 		</div>
 		<!-- /wrapper -->
@@ -651,8 +534,6 @@
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
 		<script src="assets/js/scripts.js"></script>
-		
-		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+		<script src="assets/js/quote.js"></script>
 	</body>
 </html>
