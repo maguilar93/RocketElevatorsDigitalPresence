@@ -148,22 +148,22 @@
 											<div class="row">
 												<div class="col-md-4 col-sm-4">
 													<label>Number of Apartments*</label>
-													<input type="number" name="contact[apartments]" onblur="elevatorResidential()" value="" min="1" class="form-control required">
+													<input type="number" name="residential[apartments]" onblur="elevatorResidential()" value="" min="1" class="form-control required">
 												</div>
 												<div class="col-md-4 col-sm-4">
 													<label>Number of Floors*</label>
-													<input type="number" name="contact[floors]" onblur="elevatorResidential()" value="" min="1" class="form-control required">
+													<input type="number" name="residential[floors]" onblur="elevatorResidential()" value="" min="1" class="form-control required">
 												</div>
 												<div class="col-md-4 col-sm-4">
 													<label>Number of Basements*</label>
-													<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
+													<input type="number" name="residential[basements]" value="" min="1" class="form-control required">
 												</div>
 											</div>
 
 											<div class="row">
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Elevators*</label>
-														<input type="text" name="contact[elevatorRes]" value="" class="form-control required" disabled>
+														<input type="text" name="residential[elevatorRes]" value="" class="form-control required" disabled>
 													</div>
 											</div>
 										</div> <!-- END OF RESIDENTIAL FORM -->
@@ -173,32 +173,32 @@
 											<div class="row">
 												<div class="col-md-6 col-sm-6">
 													<label>Number of Distinct Businesses*</label>
-													<input type="number" name="contact[businesses]" value="" min="1" class="form-control required">
+													<input type="number" name="commercial[businesses]" value="" min="1" class="form-control required">
 												</div>
 												<div class="col-md-6 col-sm-6">
 													<label>Number of Floors*</label>
-													<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
+													<input type="number" name="commercial[floors]" value="" min="1" class="form-control required">
 												</div>
 											</div>
 											<div class="row">
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Basements*</label>
-														<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
+														<input type="number" name="commercial[basements]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Parking Spaces*</label>
-														<input type="number" name="contact[parking]" value="" min="1" class="form-control required">
+														<input type="number" name="commercial[parking]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Elevator Cages Needed*</label>
-														<input type="number" name="contact[cages]" value=""  min="1" class="form-control required">
+														<input type="number" name="commercial[cages]" value=""  min="1" class="form-control required">
 													</div>
 											</div>
 
 											<div class="row">
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Elevators*</label>
-														<input type="text" name="contact[elevatorCom]" value="" class="form-control required" disabled>
+														<input type="text" name="commercial[elevatorCom]" value="" class="form-control required" disabled>
 													</div>
 											</div>
 
@@ -212,13 +212,13 @@
 												</div>
 												<div class="col-md-6 col-sm-6">
 													<label>Number of Floors*</label>
-													<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
+													<input type="number" name="contact[floors]" value="" min="1" onblur="elevatorsCorporate()" class="form-control required">
 												</div>
 											</div>
 											<div class="row">
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Basements*</label>
-														<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
+														<input type="number" name="contact[basements]" value="" onblur="elevatorsCorporate()" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
 														<label>Number of Parking Spaces*</label>
@@ -226,9 +226,16 @@
 													</div>
 													<div class="col-md-4 col-sm-4">
 															<label>Number of Occupants per Floor*</label>
-															<input type="number" name="contact[occupants]" value="" min="1" class="form-control required">
+															<input type="number" name="contact[occupants]" value="" min="1" onblur="elevatorsCorporate()" class="form-control required">
 														</div>
 												</div>
+
+											<div class="row">
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Elevators*</label>
+													<input type="text" name="contact[elevatorsHyb]" value="" class="form-control required" disabled>
+												</div>
+											</div>
 										</div> <!--END OF CORPORATE FORM-->
 
 										<div id="hybridForm" style="display:none"> <!-- START OF HYBRID FORM -->
@@ -239,11 +246,11 @@
 												</div>
 												<div class="col-md-4 col-sm-4">
 													<label>Number of Floors*</label>
-													<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
+													<input type="number" name="contact[floors]" value="" onblur="elevatorsHybrid()" min="1" class="form-control required">
 												</div>
 												<div class="col-md-4 col-sm-4">
 													<label>Number of Basements*</label>
-													<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
+													<input type="number" name="contact[basements]" value="" onblur="elevatorsHybrid()" min="1" class="form-control required">
 												</div>
 											</div>
 											<div class="row">
@@ -253,11 +260,18 @@
 												</div>
 												<div class="col-md-4 col-sm-4">
 													<label>Max Occupants per Floor*</label>
-													<input type="number" name="contact[occupants]" value="" min="1" class="form-control required">
+													<input type="number" name="contact[occupants]" value="" onblur="elevatorsHybrid()" min="1" class="form-control required">
 												</div>
 												<div class="col-md-4 col-sm-4">
 													<label>Number of Hours of Activity*</label>
 													<input type="number" name="contact[activity]" value="" min="1" max="24" class="form-control required">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Elevators*</label>
+													<input type="text" name="contact[elevatorsHyb]" value="" class="form-control required" disabled>
 												</div>
 											</div>
 										</div> <!--END OF HYBRID FORM-->		
