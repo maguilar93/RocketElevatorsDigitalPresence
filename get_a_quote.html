@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Smarty - Multipurpose + Admin</title>
+		<title>Rocket Elevators - Get a Quote</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -25,59 +25,11 @@
 		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	</head>
 
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-		
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
-	-->
 	<body class="smoothscroll enable-animation">
 
 		<!-- wrapper -->
 		<div id="wrapper">
 
-
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
 					<!-- TOP NAV -->
@@ -150,23 +102,6 @@
 	
 			</div>
 
-			<!-- 
-				PAGE HEADER 
-				
-				CLASSES:
-					.page-header-xs	= 20px margins
-					.page-header-md	= 50px margins
-					.page-header-lg	= 80px margins
-					.page-header-xlg= 130px margins
-					.dark			= dark page header
-
-					.shadow-before-1 	= shadow 1 header top
-					.shadow-after-1 	= shadow 1 header bottom
-					.shadow-before-2 	= shadow 2 header top
-					.shadow-after-2 	= shadow 2 header bottom
-					.shadow-before-3 	= shadow 3 header top
-					.shadow-after-3 	= shadow 3 header bottom
-			-->
 			<section class="page-header page-header-xs">
 				<div class="container">
 
@@ -211,19 +146,26 @@
 
 										<div id="residentialForm" style="display:none"> <!-- START OF RESIDENTIAL FORM -->
 											<div class="row">
-													<div class="col-md-4 col-sm-4">
-														<label>Number of Apartments*</label>
-														<input type="number" name="contact[appartments]" value="" min="1" class="form-control required">
-													</div>
-													<div class="col-md-4 col-sm-4">
-														<label>Number of Floors*</label>
-														<input type="number" name="contact[floors]" value="" min="1" class="form-control required">
-													</div>
-													<div class="col-md-4 col-sm-4">
-														<label>Number of Basements*</label>
-														<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
-													</div>
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Apartments*</label>
+													<input type="number" name="contact[apartments]" onblur="elevatorResidential()" value="" min="1" class="form-control required">
 												</div>
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Floors*</label>
+													<input type="number" name="contact[floors]" onblur="elevatorResidential()" value="" min="1" class="form-control required">
+												</div>
+												<div class="col-md-4 col-sm-4">
+													<label>Number of Basements*</label>
+													<input type="number" name="contact[basements]" value="" min="1" class="form-control required">
+												</div>
+											</div>
+
+											<div class="row">
+													<div class="col-md-4 col-sm-4">
+														<label>Number of Elevators*</label>
+														<input type="text" name="contact[elevatorRes]" value="" class="form-control required" disabled>
+													</div>
+											</div>
 										</div> <!-- END OF RESIDENTIAL FORM -->
 
 
@@ -248,10 +190,18 @@
 														<input type="number" name="contact[parking]" value="" min="1" class="form-control required">
 													</div>
 													<div class="col-md-4 col-sm-4">
-															<label>Number of Elevator Cages Needed*</label>
-															<input type="numberl" name="contact[elevator]" value="" min="1" class="form-control required">
-														</div>
-												</div>
+														<label>Number of Elevator Cages Needed*</label>
+														<input type="number" name="contact[cages]" value=""  min="1" class="form-control required">
+													</div>
+											</div>
+
+											<div class="row">
+													<div class="col-md-4 col-sm-4">
+														<label>Number of Elevators*</label>
+														<input type="text" name="contact[elevatorCom]" value="" class="form-control required" disabled>
+													</div>
+											</div>
+
 										</div> <!-- END OF COMMERCIAL FORM -->
 
 										<div id="corporateForm" style="display:none"> <!-- START OF CORPORATE FORM -->
