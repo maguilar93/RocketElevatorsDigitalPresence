@@ -7,6 +7,8 @@ let corporate = document.querySelector("#corporateForm");
 let hybrid = document.querySelector("#hybridForm");
 let elevator = document.getElementsByClassName("elevator")[0];
 
+scrollArray(overflowing, -deltaX, -deltaY);
+                event.preventDefault();
 
 
 building.addEventListener("change", function () {
@@ -115,11 +117,11 @@ let fees = [0.10, 0.13, 0.16];
 function packagePrice() {
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].checked) {
-            let price = parseInt(elevator.value * unit[i]);
+            let price = parseFloat(elevator.value * unit[i]);
             prices.value = "$ " + price.toFixed(2);
             let fee = parseFloat(price * (1+fees[i])) - price;
             installation.value = "$ " + fee.toFixed(2);
-            let totalPrice = parseInt(price) + parseInt(fee);
+            let totalPrice = parseFloat(price) + parseFloat(fee);
             total.value = "$ " + totalPrice.toFixed(2);
         } 
     }

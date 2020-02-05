@@ -27,33 +27,33 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:'Raleway','Open Sans',Arial,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .ribbon-inner {
-	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 div.mega-price-table .pricing-head small {
-	font-family:'Open Sans', Arial, Hevletica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .datepicker.dropdown-menu {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .time_pick .time,
 .time_pick .mins,
 .time_pick .meridian,
 .mfp-close,
 .price-clean {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .daterangepicker .calendar th, .daterangepicker .calendar td {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .flex-caption {
-	font-family:'Lato',Arial,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .switch > .switch-label {
-	font-family:Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 

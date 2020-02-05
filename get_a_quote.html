@@ -12,12 +12,14 @@
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
 	<!-- WEB FONTS : use %7C instead of | (pipe) -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
-		rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
 	<!-- CORE CSS -->
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- FAVICON -->
+	<link rel='icon' href='./assets/images/icons/favicon.ico' type='image/x-icon'/ >
+
 
 	<!-- THEME CSS -->
 	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
@@ -49,25 +51,13 @@
 						<img src="./assets/images/R2.png" alt="Rocky Elevators logo" />
 					</a>
 
-					<!-- 
-								Top Nav 
-								
-								AVAILABLE CLASSES:
-								submenu-dark = dark sub menu
-							-->
 					<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 						<nav class="nav-main">
 
-							<!-- 
-										.nav-onepage
-										Required for onepage navigation links
-										
-										Add .external for an external link!
-									-->
 							<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 								<li class="active">
 									<!-- HOME -->
-									<a href="#home">
+									<a href="./index.html">
 										HOME
 									</a>
 								</li>
@@ -295,7 +285,7 @@
 									<div class="col-md-4 col-sm-4">
 										<label>Number of Elevators*</label>
 										<input type="text" name="contact[elevatorsHyb]" value="0"
-											class="form-control required elevator" disabled onblur="packagePrice()">
+											class="form-control required elevator" readonly>
 									</div>
 								</div>
 
@@ -308,7 +298,7 @@
 										<div class="row" style="justify-content: space-around;" id="radioButtons">
 
 											<label for="standard"> <input type="radio" id="standard" name="radio"
-													class="buttons" value="0"  onclick="packagePrice()">
+													class="buttons" value="0" onclick="packagePrice()">
 												Standard </label>
 
 
@@ -325,27 +315,28 @@
 										<div class="row">
 											<div class="col-md-4 col-sm-4">
 												<label>Elevators price<input type="text" name="price" value=""
-													class="form-control required price" disabled></label>
-												<!-- <input type="text" name="price" value=""
-													class="form-control required price" disabled> -->
+														class="form-control required price" readonly></label>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-md-4 col-sm-4">
 												<label>Installation fees</label>
 												<input type="text" name="installation" value=""
-													class="form-control required installation" disabled> 
+													class="form-control required installation" readonly>
 											</div>
 										</div>
 										<div class="row">
-												<div class="col-md-4 col-sm-4">
-													<label>Total Price</label>
-													<input type="text" name="installation" value=""
-														class="form-control required total" disabled> 
-												</div>
+											<div class="col-md-4 col-sm-4">
+												<label>Total Price</label>
+												<input type="text" name="installation" value=""
+													class="form-control required total" readonly>
 											</div>
+										</div>
 									</div>
 								</div>
+							</fieldset>
+						</form>
+
 					</div>
 					<!-- END OF PRICES
 													SELECTION-->
@@ -353,144 +344,18 @@
 			</div>
 
 
-			</form>
-			</fieldset>
 
-			<div class="row">
-				<div class="col-md-12">
-					<button type="submit" class="btn btn-3d btn-teal btn-xlg btn-block mt-30">
-						SEND APPLICATION
-						<span class="block font-lato">We'll get back to you within 48 hours</span>
-					</button>
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-8">
+						<button type="submit" class="btn btn-3d btn-red btn-xlg btn-block mt-30">
+							SEND QUOTE FORM
+							<span class="block font-lato">We'll get back to you within 48 hours</span>
+						</button>
+					</div>
 				</div>
 			</div>
-
-			</form>
-
-
 	</div>
-
-	<!-- <div class="card-footer">
-								<a href="javascript:;" onclick="jQuery('#pre-4').slideToggle();" class="btn btn-success btn-sm">Show Code</a>
-<pre id="pre-4" class="text-left rad-0 text-danger hide mt-20 mb-0">
-<span class="text-success">&lt;!-- 
-	<b class="text-warning">.validate</b> 				- very important, to activate validation plugin
-
-	data-success="Sent! Thank you!" 	- used by toastr to print the message
-	data-toastr-position="top-right"	- toastr message position:
-		.top-right
-		.top-left
-		.bottom-right
-		.bottom-left
-
-
-	<span class="text-info bold">NOTE: Add .required class for required fields.</span>
-	This form example already used on Careers page: <a href="page-careers.html">page-careers.html</a>
- --&gt;</span>
-&lt;form class="<b class="text-warning">validate</b>" action="php/contact.php" method="post" enctype="multipart/form-data" data-success="Sent! Thank you!" data-toastr-position="top-right"&gt;
-	&lt;fieldset&gt;
-		<span class="text-success">&lt;!-- required [php action request] --&gt;</span>
-		&lt;input type="hidden" name="action" value="contact_send" /&gt;
-
-		&lt;div class="row"&gt;
-			&lt;div class="col-md-6 col-sm-6"&gt;
-				&lt;label&gt;First Name *&lt;/label&gt;
-				&lt;input type="text" name="contact[first_name]" value="" class="form-control <b>required</b>"&gt;
-			&lt;/div&gt;
-			&lt;div class="col-md-6 col-sm-6"&gt;
-				&lt;label&gt;Last Name *&lt;/label&gt;
-				&lt;input type="text" name="contact[last_name]" value="" class="form-control <b>required</b>"&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class="row"&gt;
-			&lt;div class="col-md-6 col-sm-6"&gt;
-				&lt;label&gt;Email *&lt;/label&gt;
-				&lt;input type="email" name="contact[email]" value="" class="form-control <b>required</b>"&gt;
-			&lt;/div&gt;
-			&lt;div class="col-md-6 col-sm-6"&gt;
-				&lt;label&gt;Phone *&lt;/label&gt;
-				&lt;input type="text" name="contact[phone]" value="" class="form-control <b>required</b>"&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class="row"&gt;
-			&lt;div class="col-md-12 col-sm-12"&gt;
-				&lt;label&gt;Position *&lt;/label&gt;
-				&lt;select name="contact[position]" class="form-control pointer <b>required</b>"&gt;
-					&lt;option value=""&gt;--- Select ---&lt;/option&gt;
-					&lt;option value="Marketing"&gt;PR &amp; Marketing&lt;/option&gt;
-					&lt;option value="Developer"&gt;Web Developer&lt;/option&gt;
-					&lt;option value="php"&gt;PHP Programmer&lt;/option&gt;
-					&lt;option value="Javascript"&gt;Javascript Programmer&lt;/option&gt;
-				&lt;/select&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class="row"&gt;
-			&lt;div class="col-md-6 col-sm-6"&gt;
-				&lt;label&gt;Expected Salary *&lt;/label&gt;
-				&lt;input type="text" name="contact[expected_salary]" value="" class="form-control <b>required</b>"&gt;
-			&lt;/div&gt;
-			&lt;div class="col-md-6 col-sm-6"&gt;
-				&lt;label&gt;Start Date *&lt;/label&gt;
-				&lt;input type="text" name="contact[start_date]" value="" class="form-control datepicker <b>required</b>" data-format="yyyy-mm-dd" data-lang="en" data-RTL="false"&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class="row"&gt;
-			&lt;div class="col-md-12 col-sm-12"&gt;
-				&lt;label&gt;Experience *&lt;/label&gt;
-				&lt;textarea name="contact[experience]" rows="4" class="form-control <b>required</b>"&gt;&lt;/textarea&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class="row"&gt;
-			&lt;div class="col-md-12 col-sm-12"&gt;
-				&lt;label&gt;
-					Website
-					&lt;small class="text-muted"&gt;- optional&lt;/small&gt;
-				&lt;/label&gt;
-				&lt;input type="text" name="contact[website]" placeholder="http://" class="form-control"&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class="row"&gt;
-			&lt;div class="col-md-12"&gt;
-				&lt;label&gt;
-					File Attachment 
-					&lt;small class="text-muted"&gt;Curriculum Vitae - optional&lt;/small&gt;
-				&lt;/label&gt;
-
-				&lt;!-- custom file upload --&gt;
-				&lt;input class="custom-file-upload" name="contact[attachment]" type="file" id="file" data-btn-text="Select a File" /&gt;
-				&lt;small class="text-muted block"&gt;Max file size: 10Mb (zip/pdf/jpg/png)&lt;/small&gt;
-
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-	&lt;/fieldset&gt;
-
-	&lt;div class="row"&gt;
-		&lt;div class="col-md-12"&gt;
-			&lt;button type="submit" class="btn btn-3d btn-teal btn-xlg btn-block mt-30"&gt;
-				SEND APPLICATION
-				&lt;span class="block font-lato"&gt;We'll get back to you within 48 hours&lt;/span&gt;
-			&lt;/button&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-
-&lt;/form&gt;
-</pre>
-							</div> -->
-	</div>
-	<!-- /Useful Elements -->
-
-	</div>
-
-	</div>
-	</section>
-	<!-- / -->
 
 	<!-- FOOTER -->
 	<footer id="footer">
@@ -529,7 +394,7 @@
 							<input type="email" id="email" name="email" class="form-control required"
 								placeholder="Enter your Email">
 							<span class="input-group-btn">
-								<button class="btn btn-success" type="submit">Subscribe</button>
+								<button class="btn btn-red" type="submit">Subscribe</button>
 							</span>
 						</div>
 					</form>

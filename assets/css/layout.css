@@ -60,7 +60,7 @@ html, body {
 body {
 	color:#666;
 	background-color:#fff;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 
 	font-size:16px; line-height:1.5;
@@ -365,7 +365,7 @@ section header>h6 {
 }
 
 small { 
-	font-family: 'Lato', sans-serif; 
+	font-family: 'Roboto', sans-serif;
 }
 label {
 	display:block;
@@ -457,14 +457,14 @@ section.dark h6.page-header {
 
 /* fonts */
 .font-open-sans {
-	font-family:'Open Sans',Arial,Helvetica,sans-serif !important;
+	font-family: 'Roboto', sans-serif;
 }
 .font-lato {
 	font-weight:300;
-	font-family:'Lato',Arial,Helvetica,sans-serif !important;
+	font-family:'Lato',Arial,Helvetica,sans-serif;
 }
 .font-raleway {
-	font-family:'Raleway',Arial,Helvetica,sans-serif !important;
+	font-family:'Raleway',Arial,Helvetica,sans-serif;
 }
 
 
@@ -908,9 +908,9 @@ body.boxed #wrapper {
 		display:block;
 		text-decoration:none;
 	}
-	#sidepanel ul li a[data-toggle="collapse"] {
-		/* font-weight:bold; */
-	}
+	/* #sidepanel ul li a[data-toggle="collapse"] {
+		 font-weight:bold; 
+	} */
 	#sidepanel ul li a[data-toggle="collapse"].collapsed {
 		color:#ddd;
 		font-weight:normal;
@@ -1777,12 +1777,12 @@ body.menu-vertical #mainMenu.sidebar-vertical .navbar-collapse>ul.nav.navbar-nav
 	#header.fixed  li.quick-cart .quick-cart-box {
 		margin-top:18px;
 	}
-		#header.fixed.header-sm li.quick-cart .quick-cart-box {
-			/*margin-top:18px;*/
+		/* #header.fixed.header-sm li.quick-cart .quick-cart-box {
+			margin-top:18px;
 		}
 		#header.fixed.header-md li.quick-cart .quick-cart-box {
-			/*margin-top:15px;*/
-		}
+			margin-top:15px;
+		} */
 
 	#header li.quick-cart .quick-cart-wrapper {
 		max-height:400px;
@@ -2807,11 +2807,11 @@ body.menu-vertical #mainMenu.sidebar-vertical .navbar-collapse>ul.nav.navbar-nav
 		border:rgba(255,255,255,0.15) 1px solid;
 		border-bottom:0;
 	}
-	@media only screen and (max-width: 992px) {
+	/* @media only screen and (max-width: 992px) {
 		#header.static {
-			/*position:relative !important;*/
+			position:relative !important;
 		}
-	}
+	} */
 
 	 #header.static:not(.transparent) + section.page-header {
 	 	margin-top:60px;
@@ -3804,8 +3804,6 @@ body.menu-vertical #mainMenu.sidebar-vertical .navbar-collapse>ul.nav.navbar-nav
 	#page-menu.page-menu-light ul li {
 		border-left:rgba(0,0,0,0.05) 1px solid;
 	}
-	#page-menu.page-menu-light ul li:hover {
-	}
 	#page-menu.page-menu-light ul li a {
 		color:#151515;
 	}
@@ -4741,8 +4739,8 @@ svg {
     border-radius: 3px;
     background: #292929;
     color: white;
-    font-family: sans-serif, Verdana;
-    font-size: smaller;
+	font-family: 'Roboto', sans-serif;
+	font-size: smaller;
     padding: 3px;
 }
 
@@ -6967,7 +6965,7 @@ section#slider:not(.custom-form) .btn-default {
 		display:inline-block;
 		color: #fff;
 		background-color:rgba(0,0,0,0.7);
-		font-family:'Lato',Arial,Helvetica,sans-serif;
+		font-family: 'Roboto', sans-serif;
 		font-weight:300;
 		padding: 6px 15px 8px 15px;
 		opacity: 1;
@@ -7017,7 +7015,7 @@ section#slider:not(.custom-form) .btn-default {
 		list-style: none;
 	}
 	.camera_caption {
-		font-family:'Lato',Arial,Helvetica,sans-serif;
+		font-family: 'Roboto', sans-serif;
 		font-size:22px;
 		font-weight:300;
 	}
@@ -7050,7 +7048,7 @@ section#slider:not(.custom-form) .btn-default {
 	.ei-title h3 {
 		font-size: 60px;
 		line-height: 60px;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		text-transform: uppercase;
 		font-weight:300;
 		color: #fff;
@@ -7081,7 +7079,7 @@ section#slider:not(.custom-form) .btn-default {
 	}
 	.ei-slider-thumbs li img {
 		-webkit-box-reflect: none;
-		-ms-filter: none;
+		/* -ms-filter: none; */
 	}
 
 	@media only screen and (max-width: 768px) {
@@ -7133,8 +7131,8 @@ section#slider:not(.custom-form) .btn-default {
 	}
 
 	.tparrows.round:before {
-		font-family: 'revicons';
-	}
+		font-family: 'Roboto', sans-serif;
+		}
 	.tparrows {
 		top:50% !important;
 		margin-top:-25px;
@@ -7280,8 +7278,8 @@ section#slider:not(.custom-form) .btn-default {
 		font-size:90px;
 		line-height:90px;
 		margin:0;
-		font-family:Arial,Helvetica,sans-serif;
-	}
+		font-family: 'Roboto', sans-serif;
+		}
 	#slider div.slider-featured-text h2 {
 		text-shadow:#333 1px 1px 3px;
 		font-size:30px;
@@ -7929,7 +7927,7 @@ section.dark #portfolio h3 {
 h1.blog-post-title,
 .blog-post-item h2 {
 	letter-spacing:0;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size:22px;
 	margin-bottom:10px;
 }
@@ -8128,7 +8126,7 @@ h1.blog-post-title {
 	}
 .comments small {
 	font-size:12px;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color:#aaa;
 }
 .comments h4 {
@@ -8349,7 +8347,7 @@ li.comment a.comment-author span {
 	line-height:1;
 	color:#ccc;
 	font-weight:bold;
-	font-family:'Lato','Open Sans',Arial,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .timeline .timeline-entry>.timeline-vline {
 	position: absolute;
@@ -8374,7 +8372,7 @@ li.comment a.comment-author span {
 	font-size:13px;
 	text-transform:uppercase;
 	font-weight:300;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 section.alternate .timeline .timeline-entry {
 	background-color:#F9F9F9;
@@ -8585,7 +8583,7 @@ section.dark .error-404 {
 	padding: 20px;
 	margin-top: 10%;
 	background-color: rgba(0,0,0,0.05);
-	font-family:'Open Sans';
+	font-family: 'Roboto', sans-serif;
 	font-size:14px; 
 	line-height:23px;
 	text-align: center;
@@ -9040,7 +9038,7 @@ section.dark-2 div.category-grid .card {
 	}
 	#footer ul.footer-list li small {
 		display:block;
-		font-family:'Open Sans',Arial,Helvetica,sans-serif;
+		font-family: 'Roboto', sans-serif;
 		color:#ddd;
 	}
 		#footer.footer-light ul.footer-list li small {
@@ -9111,7 +9109,7 @@ section.dark-2 div.category-grid .card {
 
 	/* footer images gallery */
 	#footer .footer-gallery>a {
-		display:inline-block;
+		/* display:inline-block; */
 		margin-bottom:3px;
 		margin-right:3px;
 		float:left;
@@ -9647,7 +9645,7 @@ section.dark-2 div.category-grid .card {
 
 /* material section color switch */
 #header a.color-switch {
-	display: inline-block;
+	/* display: inline-block; */
 	position: relative;
 	float: left;
 	width: 35px;

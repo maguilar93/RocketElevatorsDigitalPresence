@@ -11,7 +11,7 @@
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
 		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
 		<!-- CORE CSS -->
 		<link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -24,63 +24,19 @@
 		<link href="./assets/css/essentials.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/css/layout.css" rel="stylesheet" type="text/css" />
 
+		<!-- FAVICON -->
+		<link rel='icon' href='./assets/images/icons/favicon.ico' type='image/x-icon'/ >
+
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="./assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	</head>
 
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="./assets/images/_smarty/boxed_background/1.jpg"
-	-->
 	<body class="smoothscroll enable-animation">
 
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
 				<!-- TOP NAV -->
@@ -97,21 +53,9 @@
 							<img src="./assets/images/R2.png" alt="Rocky Elevators logo" />
 						</a>
 
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
 						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 							<nav class="nav-main">
 
-								<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
 										<a href="#home">
@@ -197,8 +141,8 @@
 								data-endspeed="300"
 
 								style="z-index: 5;  max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-warning btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
-									<a class="btn btn-default btn-lg" href="#">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-red btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-default btn-lg" href="./get_a_quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 						</li>
 
@@ -252,7 +196,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 4; max-width: auto;">
-									<a class="btn btn-warning btn-lg" href="./residential.html">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-red btn-lg" href="./residential.html">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 
 							<div class="tp-caption sfb tp-resizeme"
@@ -267,7 +211,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-default btn-lg" href="#">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-default btn-lg" href="./get_a_quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 						</li>
 
@@ -321,7 +265,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 4; max-width: auto;">
-									<a class="btn btn-warning btn-lg" href="./commercial.html">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-red btn-lg" href="./commercial.html">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 
 							<div class="tp-caption sfb tp-resizeme"
@@ -336,7 +280,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-default btn-lg" href="#">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-default btn-lg" href="./get_a_quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 						</li>
 
@@ -395,9 +339,9 @@
 
 					<div class="text-center">
 						<h2 class="fs-40 fw-300">Elevator Experts Since 1976</h2>
-						<a class="btn btn-default btn-lg" href="#">GET A QUOTE <i class="fa fa-angle-right"></i></a> 
+						<a class="btn btn-default btn-lg" href="./get_a_quote.html">GET A QUOTE <i class="fa fa-angle-right"></i></a> 
 						&nbsp; OR &nbsp; 
-						<a class="btn btn-warning btn-lg" href="#">CONTACT US <i class="fa fa-angle-right"></i></a>
+						<a class="btn btn-lg btn-red" href="#">CONTACT US <i class="fa fa-angle-right"></i></a>
 					</div>
 
 				</div>
@@ -432,21 +376,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="./assets/images/pexels-photo-1281346.jpeg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-6.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-											</span>
-										</span>
-
 										<img class="img-fluid" src="./assets/images/portfolio/bruno-kelzer-dendZhhfkTc-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -467,23 +396,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w2-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-6.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="./assets/images/portfolio/camille-chen-N0ku2VxW4DA-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -504,23 +416,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w3-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-4.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="./assets/images/portfolio/charles-U5-LdkPFzkk-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -541,23 +436,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w4-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="./assets/images/portfolio/frankie-lopez-M2uJLV9VPuo-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -578,23 +456,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w5-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="./assets/images/portfolio/fred-kleber-tSDsY-zvg5k-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -615,23 +476,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w6-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="./assets/images/portfolio/luca-bravo-_mUJBHE7z_0-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -652,23 +496,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w7-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="./assets/images/portfolio/michel-paz-Nsn_NDZDX7U-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -689,23 +516,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w8-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="assets/images/portfolio/sung-jin-cho--S87hxapFvU-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -725,23 +535,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w8-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="assets/images/portfolio/wander-fleur-lj-RMh2bOSc-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -761,23 +554,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w8-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="assets/images/portfolio/pexels-photo-1281346.jpeg" width="600" height="399" alt="">
 									</figure>
 
@@ -797,23 +573,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w8-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="assets/images/portfolio/sara-kurfess-DQYwXF66v1I-unsplash.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -833,23 +592,6 @@
 
 								<div class="item-box">
 									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w8-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
 										<img class="img-fluid" src="assets/images/portfolio/standing-man-figurine-2098604.jpg" width="600" height="399" alt="">
 									</figure>
 
@@ -915,25 +657,6 @@
 						<h2>Recent News</h2>
 					</div>
 
-					<!-- 
-						controlls-over		= navigation buttons over the image 
-						buttons-autohide 	= navigation buttons visible on mouse hover only
-						
-						data-plugin-options:
-							"singleItem": true
-							"autoPlay": true (or ms. eg: 4000)
-							"navigation": true
-							"pagination": true
-							"items": "4"
-
-						owl-carousel item paddings
-							.owl-padding-0
-							.owl-padding-3
-							.owl-padding-6
-							.owl-padding-10
-							.owl-padding-15
-							.owl-padding-20
-					-->
 					<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
 						<div class="img-hover">
 							<a href="https://www.elevatorworld.com/blogs/">
@@ -1265,7 +988,7 @@
 												<label for="contact:attachment">File Attachment</label>
 
 												<!-- custom file upload -->
-												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
+												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment"  data-btn-text="Select a File" />
 												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
 
 											</div>
@@ -1275,7 +998,7 @@
 
 								<div class="row">
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
+										<button type="submit" class="btn btn-red"><i class="fa fa-check"></i> SEND MESSAGE</button>
 									</div>
 								</div>
 							</form>
@@ -1329,7 +1052,7 @@
 									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
 									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
+										<button class="btn btn-red" type="submit">Subscribe</button>
 									</span>
 								</div>
 							</form>
