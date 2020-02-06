@@ -270,7 +270,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family:'Roboto', sans-serif;
 	font-weight:600;
 	color:#414141;
 	position: relative;
@@ -2064,7 +2064,7 @@ ul.list-icons>li>i {
 	top: 28px;
 }
 .ribbon-inner {
-	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 	-webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
 	   -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
@@ -3113,7 +3113,7 @@ button::-moz-focus-inner {
   color: #FFF;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace; }
+  font-family: 'Roboto', sans-serif; }
   .mfp-close:hover, .mfp-close:focus {
     opacity: 1;
     filter: alpha(opacity=100); }
@@ -5440,7 +5440,7 @@ a.btn.btn-sm {
 .countTo-sm,
 .countTo-md,
 .countTo-lg {
-	font-family:'Raleway', 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family:'Roboto', sans-serif;
 }
 .countTo-sm span.countTo {
 	margin-bottom:20px;
@@ -5490,7 +5490,7 @@ a.btn.btn-sm {
 /* Countdown */
 .countdown { 
 	display: block; 
-	font-family:'Raleway', 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family:'Roboto', sans-serif;
 }
 
 .countdown-row {
@@ -8794,7 +8794,7 @@ div.mega-price-table .pricing-head small {
 	display:block;
 	color:rgba(255,255,255,0.7);
 	font-weight:300;
-	font-family:'Open Sans', Arial, Hevletica, sans-serif;
+	font-family:'Roboto', sans-serif;
 }
 
 div.mega-price-table .pricing-desc li,
@@ -8863,7 +8863,7 @@ div.mega-price-table .dropdown-menu {
 	text-align: center;
 	position: relative;
 	border: 1px solid #eaeaea;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 	-webkit-box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.065);
 			box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.065);
@@ -9813,7 +9813,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   color: #333333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 1.428571429;
 }
@@ -9890,7 +9890,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 .daterangepicker .calendar th, .daterangepicker .calendar td {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   white-space: nowrap;
   text-align: center;
   min-width: 32px;
@@ -10190,7 +10190,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 	margin: 0;
 	font-size: 20px;
 	color: #2d2e2e;
-	font-family: arial;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
 
@@ -12442,7 +12442,7 @@ html[xmlns] .flexslider .slides {
 		display:inline-block;
 		color: #fff;
 		background-color:rgba(0,0,0,0.7);
-		font-family:'Lato',Arial,Helvetica,sans-serif;
+		font-family:'Roboto', sans-serif;
 		font-weight:300;
 		padding: 6px 15px 8px 15px;
 		opacity: 1 !important;
@@ -13345,7 +13345,7 @@ section.dark select>optgroup {
     background: #B5C1C7;
     border: 2px solid #B5C1C7;
 	text-transform: uppercase;
-	font-family:Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 
     -webkit-transition: 0.3s ease-out;
        -moz-transition: 0.3s ease-out;
@@ -14479,7 +14479,7 @@ section.dark .sky-form .toggle input:focus+i {
     width: 100%;
     padding: 10px;
     margin-bottom: 0;
-    font-family: Menlo,Monaco,monospace,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #ccc;
     background-color: #222;
@@ -14755,7 +14755,7 @@ section.dark .sky-form .toggle input:focus+i {
 .note-dialog .note-help-dialog .note-shortcut td:first-child {
     min-width: 110px;
     padding-right: 10px;
-    font-family: "Courier New";
+    font-family: 'Roboto', sans-serif;
     color: #dd0;
     text-align: right;
 }
@@ -15086,7 +15086,7 @@ h1:before,h2:before,h3:before,h4:before,h5:before,h6:before {
 	font-size: 100px;
 	font-weight:bold;
 	letter-spacing: 0;
-	font-family:Arial,Helvetica,sans-serif;
+	font-family:'Roboto', sans-serif;
 	line-height: 0.3;
 	display: block;
 	text-align: center;
