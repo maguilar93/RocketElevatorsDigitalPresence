@@ -7,8 +7,6 @@ let corporate = document.querySelector("#corporateForm");
 let hybrid = document.querySelector("#hybridForm");
 let elevator = document.getElementsByClassName("elevator")[0];
 
-scrollArray(overflowing, -deltaX, -deltaY);
-                event.preventDefault();
 
 
 building.addEventListener("change", function () {
@@ -37,6 +35,14 @@ building.addEventListener("change", function () {
         residential.style.display = "none";
         commercial.style.display = "none";
         corporate.style.display = "none";
+    }
+
+    for (var b = 0; b < buttons.length; b++) {
+        buttons[b].checked = false;
+        elevator.value = 0;
+        prices.value = "$ " + 0;
+        installation.value = "$ " + 0;
+        total.value = "$ " + 0;
     }
 });
 
