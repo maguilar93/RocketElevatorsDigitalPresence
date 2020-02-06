@@ -7,9 +7,6 @@ let corporate = document.querySelector("#corporateForm");
 let hybrid = document.querySelector("#hybridForm");
 let elevator = document.getElementsByClassName("elevator")[0];
 
-scrollArray(overflowing, -deltaX, -deltaY);
-                event.preventDefault();
-
 
 building.addEventListener("change", function () {
     if (building.value == 0) {
@@ -38,7 +35,16 @@ building.addEventListener("change", function () {
         commercial.style.display = "none";
         corporate.style.display = "none";
     }
+
+    for (var b = 0; b < buttons.length; b++) {
+        buttons[b].checked = false;
+        elevator.value = 0;
+        prices.value = "$ " + 0;
+        installation.value = "$ " + 0;
+        total.value = "$ " + 0;
+    }
 });
+
 
 // Get number of elevators for commercial // 
 
@@ -119,10 +125,10 @@ function packagePrice() {
         if (buttons[i].checked) {
             let price = parseFloat(elevator.value * unit[i]);
             prices.value = "$ " + price.toFixed(2);
-            let fee = parseFloat(price * (1+fees[i])) - price;
+            let fee = parseFloat(price * (1 + fees[i])) - price;
             installation.value = "$ " + fee.toFixed(2);
             let totalPrice = parseFloat(price) + parseFloat(fee);
             total.value = "$ " + totalPrice.toFixed(2);
-        } 
+        }
     }
 }
