@@ -1,10 +1,16 @@
-const express = require("express");
-const app = express();
+const express = require('express')
+const bodyParser = require("body-parser")
+const app = express()
+const port = 3000
 
-app.get("/", (req, res)=> {
-    res.send("Hello World");
+// middleware / routing
+// app.set("view engine", "")
+app.use(express.static("public"));
+
+app.get("/submit-form", function(req, res){
+    return res.render("/submit-form");
+})
+
+app.listen(port, function(){
+    console.log("My server is running on port 3000")
 });
-
-// PORT
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}...`))
