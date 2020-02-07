@@ -56,61 +56,75 @@ cages.addEventListener('input', function () {
 
 // Get number of elevators for residential // 
 
-function elevatorResidential() {
+let resFields = document.getElementsByClassName("resFields");
+let resArray = Array.from(resFields);
 
-    let apartments = document.getElementsByName("residential[apartments]")[0];
-    let floorsRes = document.getElementsByName("residential[floors]")[0];
+for (var r = 0; r < resArray.length; r++) {
+    resArray[r].addEventListener("blur", function () {
 
-    let avgDoors = parseInt(apartments.value) / parseInt(floorsRes.value);
-    let numElevators = avgDoors / 6;
-    let numColumns = Math.ceil(floorsRes.value / 20);
+            let apartments = document.getElementsByName("residential[apartments]")[0];
+            let floorsRes = document.getElementsByName("residential[floors]")[0];
 
-
-    if (apartments.value.length > 0 && floorsRes.value.length > 0) {
-
-        elevator.value = Math.ceil(numElevators) * numColumns;
-
-    }
-};
-
-// Get number of elevators for hybrid and corporate // 
-
-function elevatorsCorporate() {
-
-    let occupants = document.getElementsByName("contact[occupants]")[0];
-    let floors = document.getElementsByName("contact[floors]")[0];
-    let basements = document.getElementsByName("contact[basements]")[0];
-
-    let numStories = parseInt(floors.value) + parseInt(basements.value);
-    let totalOccupants = occupants.value * numStories;
-    let numElevators = Math.ceil(totalOccupants / 1000);
-    let numColumns = Math.ceil(numStories / 20);
+            let avgDoors = parseInt(apartments.value) / parseInt(floorsRes.value);
+            let numElevators = avgDoors / 6;
+            let numColumns = Math.ceil(floorsRes.value / 20);
 
 
-    if (occupants.value.length > 0 && basements.value.length > 0 && floors.value.length > 0) {
-        let elevPerCol = Math.ceil(numElevators / numColumns);
-        elevator.value = elevPerCol * numColumns;
-    }
+            if (apartments.value.length > 0 && floorsRes.value.length > 0) {
+
+                elevator.value = Math.ceil(numElevators) * numColumns;
+
+            }
+    })
 }
 
-function elevatorsHybrid() {
+// Get number of elevators for corporate // 
 
-    let occupants = document.getElementsByName("contact[occupants]")[1];
-    let floors = document.getElementsByName("contact[floors]")[1];
-    let basements = document.getElementsByName("contact[basements]")[1];
+let corpFields = document.getElementsByClassName("corporateField");
+let corporateArray = Array.from(corpFields);
 
-    let numStories = parseInt(floors.value) + parseInt(basements.value);
-    let totalOccupants = occupants.value * numStories;
-    let numElevators = Math.ceil(totalOccupants / 1000);
-    let numColumns = Math.ceil(numStories / 20);
+for (var p = 0; p < corporateArray.length; p++) {
+    corporateArray[p].addEventListener("blur", function () {
 
+        let occupants = document.getElementsByName("contact[occupants]")[0];
+        let floors = document.getElementsByName("contact[floors]")[0];
+        let basements = document.getElementsByName("contact[basements]")[0];
 
-    if (occupants.value.length > 0 && basements.value.length > 0 && floors.value.length > 0) {
-        let elevPerCol = Math.ceil(numElevators / numColumns);
-        elevator.value = elevPerCol * numColumns;
-    }
+        let numStories = parseInt(floors.value) + parseInt(basements.value);
+        let totalOccupants = occupants.value * numStories;
+        let numElevators = Math.ceil(totalOccupants / 1000);
+        let numColumns = Math.ceil(numStories / 20);
+
+        if (occupants.value.length > 0 && basements.value.length > 0 && floors.value.length > 0) {
+            let elevPerCol = Math.ceil(numElevators / numColumns);
+            elevator.value = elevPerCol * numColumns;
+        }
+    })
 }
 
+// Get number of elevators for hybrid // 
+
+let hybFields = document.getElementsByClassName("hybFields");
+let hybridArray = Array.from(hybFields);
+
+for (var h = 0; h < hybridArray.length; h++) {
+    hybridArray[h].addEventListener("blur", function () {
+        let occupants = document.getElementsByName("contact[occupants]")[1];
+        let floors = document.getElementsByName("contact[floors]")[1];
+        let basements = document.getElementsByName("contact[basements]")[1];
+
+        let numStories = parseInt(floors.value) + parseInt(basements.value);
+        let totalOccupants = occupants.value * numStories;
+        let numElevators = Math.ceil(totalOccupants / 1000);
+        let numColumns = Math.ceil(numStories / 20);
+
+
+        if (occupants.value.length > 0 && basements.value.length > 0 && floors.value.length > 0) {
+            let elevPerCol = Math.ceil(numElevators / numColumns);
+            elevator.value = elevPerCol * numColumns;
+        }
+    })
+}
 
 // Get unit price for different packages
 let buttons = document.getElementsByClassName("buttons");

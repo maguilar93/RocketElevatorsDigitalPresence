@@ -18,7 +18,7 @@
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 	<!-- FAVICON -->
-	<link rel='icon' href='./assets/images/icons/favicon.ico' type='image/x-icon'/ >
+	<link rel='icon' href='./assets/images/icons/favicon.ico' type='image/x-icon' />
 
 
 	<!-- THEME CSS -->
@@ -150,15 +150,13 @@
 									<div class="row">
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Apartments*</label>
-											<input type="number" name="residential[apartments]"
-												onblur="elevatorResidential()" value="" min="1"
-												class="form-control required">
+											<input type="number" name="residential[apartments]" value="" min="1"
+												class="form-control required resFields">
 										</div>
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Floors*</label>
-											<input type="number" name="residential[floors]"
-												onblur="elevatorResidential()" value="" min="1"
-												class="form-control required">
+											<input type="number" name="residential[floors]" value="" min="1"
+												class="form-control required resFields">
 										</div>
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Basements*</label>
@@ -215,14 +213,14 @@
 										<div class="col-md-6 col-sm-6">
 											<label>Number of Floors*</label>
 											<input type="number" name="contact[floors]" value="" min="1"
-												onblur="elevatorsCorporate()" class="form-control required">
+												class="form-control required corporateField">
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Basements*</label>
-											<input type="number" name="contact[basements]" value=""
-												onblur="elevatorsCorporate()" min="1" class="form-control required">
+											<input type="number" name="contact[basements]" value="" min="1"
+												class="form-control required corporateField">
 										</div>
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Parking Spaces*</label>
@@ -232,7 +230,7 @@
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Occupants per Floor*</label>
 											<input type="number" name="contact[occupants]" value="" min="1"
-												onblur="elevatorsCorporate()" class="form-control required">
+												class="form-control required corporateField">
 										</div>
 									</div>
 
@@ -249,13 +247,13 @@
 										</div>
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Floors*</label>
-											<input type="number" name="contact[floors]" value=""
-												onblur="elevatorsHybrid()" min="1" class="form-control required">
+											<input type="number" name="contact[floors]" value="" min="1"
+												class="form-control required hybFields">
 										</div>
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Basements*</label>
-											<input type="number" name="contact[basements]" value=""
-												onblur="elevatorsHybrid()" min="1" class="form-control required">
+											<input type="number" name="contact[basements]" value="" min="1"
+												class="form-control required hybFields">
 										</div>
 									</div>
 									<div class="row">
@@ -266,8 +264,8 @@
 										</div>
 										<div class="col-md-4 col-sm-4">
 											<label>Max Occupants per Floor*</label>
-											<input type="number" name="contact[occupants]" value=""
-												onblur="elevatorsHybrid()" min="1" class="form-control required">
+											<input type="number" name="contact[occupants]" value="" min="1"
+												class="form-control required hybFields">
 										</div>
 										<div class="col-md-4 col-sm-4">
 											<label>Number of Hours of Activity*</label>
@@ -298,17 +296,17 @@
 										<div class="row" style="justify-content: space-around;" id="radioButtons">
 
 											<label for="standard"> <input type="radio" id="standard" name="radio"
-													class="buttons" value="0" onclick="packagePrice()">
+												onclick="packagePrice()" class="buttons" value="0">
 												Standard </label>
 
 
 											<label for="premium"> <input type="radio" id="premium" name="radio"
-													class="buttons" value="1" onclick="packagePrice()">
+												onclick="packagePrice()" class="buttons" value="1">
 												Premium </label>
 
 
 											<label for="excelium"> <input type="radio" id="excelium" class="buttons"
-													name="radio" onclick="packagePrice()" value="2">
+													onclick="packagePrice()" name="radio" value="2">
 												Excelium </label>
 										</div>
 										<br>
