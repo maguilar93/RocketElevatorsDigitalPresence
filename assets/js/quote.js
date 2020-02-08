@@ -7,8 +7,6 @@ let corporate = document.querySelector("#corporateForm");
 let hybrid = document.querySelector("#hybridForm");
 let elevator = document.getElementsByClassName("elevator")[0];
 
-
-
 building.addEventListener("change", function () {
     if (building.value == 0) {
         residential.style.display = "none";
@@ -44,13 +42,6 @@ building.addEventListener("change", function () {
         installation.value = "$ " + 0;
         total.value = "$ " + 0;
     }
-});
-
-// Get number of elevators for commercial // 
-
-let cages = document.getElementsByName("commercial[cages]")[0];
-cages.addEventListener('input', function () {
-    elevator.value = cages.value;
 });
 
 
